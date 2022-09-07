@@ -6,7 +6,8 @@
 # [Repo Location] https://github.com/geekafy/portainer_update_script/blob/43a8054e589a66f9bd734df446de6a37f5d1ff11/portainer_update.sh
 # ------------------------------------------------------------------
 
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
 docker stop portainer
 docker rm portainer
 docker pull portainer/portainer-ce:latest
